@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Grechen+Fuemen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Style+Script&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    background-color: #000; /* Keeps background consistent */
+    
+}
+
+.stro{
+    font-family: "Rubik", serif;
+}
+/* Video Background */
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+   
+  
+}
+
+.font{
+
+    font-family: "Rubik", serif;
+}
+
+.ved1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Overlay Text */
+.overlay {
+    position: absolute;
+    top: 33%;
+    left: 10%;
+    z-index: 2;
+    color: #6c757d;
+}
+
+
+/* Button Hover Effect */
+.lig:hover {
+    color: black !important;
+}
+
+/* Headings & Paragraphs */
+h2, p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.bb {
+    font-size: xx-large;
+}
+
+/* Features Section */
+.bg1 {
+    background-color: #191919;
+    padding-bottom: 50px;
+}
+
+/* Cards Styling */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+/* Ensuring Cards Have Same Height */
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Features Section (Fixed Height) */
+.main1 {
+    width: 100%;
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* About Section */
+.abou {
+    background-color: black;
+    color: #292929;
+}
+.separator {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .overlay {
+        top: 15%;
+        left: 5%;
+        text-align: center;
+    }
+
+    .bb {
+        font-size: large;
+    }
+
+    .card:hover {
+        transform: scale(1.02); /* Reduce hover effect on small screens */
+    }
+}
+/* Section Container */
+.mdiv {
+    width: 100%;
+    min-height: 600px;
+    background-color: black;
+    padding: 50px 20px;
+}
+
+/* Image Column */
+.glowing-image {
+    animation: glowing-border 1.5s infinite alternate ease-in-out;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Image Positioning */
+.img-custom {
+    max-width: 300px; /* Limit image size */
+    margin-bottom: 20px; /* Ensure spacing from text */
+}
+
+/* Text Column */
+.about-text {
+    color: white;
+    border: 1px solid white;
+    padding: 20px;
+    animation: glowing-border 1.5s infinite alternate ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Glowing Effect */
+@keyframes glowing-border {
+    0%, 100% { box-shadow: 0px 0px 5px 2px white; }
+    50% { box-shadow: 0px 0px 5px 10px white; }
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack elements in column layout */
+    }
+
+    .about-text {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .img-custom {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 20px auto;
+    }
+}
+.highlighted-text{
+    color: rgb(74, 74, 168);
+}
+
+/*   Guide */
+.mai{
+    background-color: #191919;
+    width: 100%;
+    
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (min-width: 100px) {
+    .mai {
+        min-height: 400px; /* Allows the height to expand if content overflows */
+        height: auto; /* Ensures responsiveness */
+    }
+}
+
+  .table-dark-custom {
+            background-color: #1e1e1e; /* Dark table background */
+            color: white;
+            border: 2px solid white; /* White border around the table */
+        }
+        .table-dark-custom th,
+        .table-dark-custom td {
+            border: 2px solid white !important; /* White border for table cells */
+        }
+.table-dark-custom tbody tr:hover {
+    background-color: #292929; /* Row hover effect */
+}
+.main4{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.hov:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.social-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            
+        }
+
+        /* Wrapper for the icons */
+        .icon-box {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Individual icon styling */
+        .icon {
+            width: 40px;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Background hover animation */
+        .icon::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease-in-out;
+            z-index: 0;
+            
+        }
+
+        /* When hovered, the background expands */
+        .icon:hover::before {
+            transform: scaleX(1);
+            
+        }
+
+        /* Icon styles */
+        .icon i {
+            font-size: 20px;
+            color: white;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Change icon color when hovered */
+        .icon:hover i {
+            color: #191919;
+            cursor: pointer;
+        }
+.bgdark{
+    background-color: #000;
+}
+
+
+/* form Validation */
+container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.input-icon {
+    padding: 10px;
+    background: #ddd;
+    color: #555;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}

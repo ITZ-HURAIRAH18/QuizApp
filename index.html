@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+       
+        .ved1 {
+            filter: brightness(50%);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top font " style="background-color: black;"
+        aria-label="Ninth navbar example">
+        <div class="container-xl">
+            <a class="navbar-brand" href="index.html">Quiz App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL"
+                aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarsExample07XL">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Features">Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#About">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#guide">Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#con">Contact us</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid main font">
+        <!-- <video class="ved1" autoplay="" muted="" loop="" src="01.mp4" type="video/mp4"></video> -->
+        <video class="ved1" autoplay="" muted="" loop="" src="vedio/bgvedio.mp4" type="video/mp4"></video>
+
+        <!-- Text container -->
+        <div class="overlay">
+            <h2 style="font-family: 'Arial Narrow Bold', sans-serif; color:white; font-style: italic;">
+                <strong class="ms-3">Hello, I am</strong>
+            </h2>
+            
+            <h1 class="display-3 strong ">
+                <strong class="strong " style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                    <i >Quiz Maker</i>
+                </strong>
+            </h1>
+            
+            <p class="mt-4 bb ms-2" style="color: white; font-style: italic;">Generate your Quiz According to your Requirment</p>
+
+            <a href="quiz.html" <button type="button" class="btn btn-outline-light text-light lig mt-4 ms-3">Let's
+                Start</button>
+            </a>
+
+        </div>
+        <!-- <p style="width: 100%; height:5px; background-color: white;" > -->
+
+    </div>
+    </div>
+    <div class="separator"></div>
+
+
+
+    <div class="main1 bg1 font" id="Features">
+
+        <h1 class="text-light text-center mt-5">Our Features</h1>
+
+        <div class="container mt-5">
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 d-flex">
+                    <div class="card bg-dark text-center p-3 shadow-lg border-0 d-flex flex-column h-100">
+                        <!-- Icon -->
+                        <div class="text-center">
+                            <i class="fa-solid fa-file-arrow-up text-primary display-3"></i>
+                        </div>
+
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title text-light mt-3">Dynamic Question</h5>
+                            <p class="card-text text-light">
+                                Users can upload an Excel file containing MCQs. The app reads and displays
+                                the selected number of questions dynamically.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <div class="card bg-dark text-center p-3 shadow-lg border-0 d-flex flex-column h-100">
+                        <!-- Icon -->
+                        <div class="text-center">
+                            <i class="fa-solid fa-check-circle text-primary display-3"></i>
+                        </div>
+
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title text-light mt-3">Real-Time Answer Checking</h5>
+                            <p class="card-text text-light">
+                                Users select an answer, and it instantly highlights correct (✅ green) or wrong (❌ red).
+                                The correct answer is always shown if a wrong option is chosen.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <div class="card bg-dark text-center p-3 shadow-lg border-0 d-flex flex-column h-100">
+                        <!-- Icon -->
+                        <div class="text-center">
+                            <i class="fa-solid fa-clock text-primary display-3"></i>
+                        </div>
+
+                        <div class="card-body flex-grow-1">
+                            <h5 class="card-title text-light mt-3">Countdown Timer</h5>
+                            <p class="card-text text-light">
+                                Each question has a countdown timer, forcing users to answer within time.
+                                If time runs out, the app automatically highlights the correct answer and moves to the
+                                next question.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="separator"></div>
+    <div class="container-fluid mdiv font" id="About">
+        <div class="row justify-content-center align-items-center flex-column flex-md-row">
+
+            <!-- Image Column -->
+            <div class="col-md-4 text-center">
+                <img class="mt-5 img-fluid glowing-image img-custom" src="images/me.png" alt="Profile Image">
+            </div>
+
+            <!-- Text Column -->
+            <div class="col-md-6 about-text">
+                <h1 class="text-center mt-2">About Us</h1>
+                <p class="text-light mt-2">
+                    This dynamic quiz-making website was developed under the esteemed guidance of
+                    <span class="text-primary">Prof Hanzala Aziz</span>, whose invaluable mentorship shaped its core
+                    functionalities and interactive design.
+                    His expertise provided us with critical insights, allowing us to refine our vision into an engaging
+                    and user-friendly platform.
+                    <br><br>
+                    Our dedicated team, <span class="text-primary">Muhammad Abu Hurairah & Ali Riaz</span>, collaborated
+                    to implement innovative features like Single Player Mode.
+                    This project reflects our commitment to technological innovation, and we look forward to introducing
+                    more exciting updates to enhance the quiz experience further!
+                    <br><br>
+                    We wish from Allah for success, knowledge, and growth.
+                    May this journey be blessed with continuous innovation and progress.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+
+
+
+    <div class="container-fluid mai font" id="guide">
+
+        <h1 class="text-light text-center mt-5">Guidence</h1>
+
+        <h5 class="text-light text-center mt-3">A web-based quiz app that allows users to upload an Excel file with
+            MCQs, set the number of questions and time per question, and take the quiz with real-time answer validation
+            and result tracking.Here is the Example how to make Excel file</h5>
+        <table class="table table-bordered table-dark-custom mt-5">
+            <thead class="table-dark">
+                <tr>
+                    <th>Sr</th>
+                    <th>Question</th>
+                    <th>Option A</th>
+                    <th>Option B</th>
+                    <th>Option C</th>
+                    <th>Option D</th>
+                    <th>Correct Answer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class=" text-light" style=" background-color: #292929;">1</td>
+                    <td class=" text-light" style=" background-color: #292929;">What is the capital of France?</td>
+                    <td class=" text-light" style=" background-color: #292929;">Berlin</td>
+                    <td class=" text-light" style=" background-color: #292929;">Madrid</td>
+                    <td class=" text-light" style=" background-color: #292929;">Paris</td>
+                    <td class=" text-light" style=" background-color: #292929;">Rome</td>
+                    <td class=" text-light" style=" background-color: #292929;">C</td>
+                </tr>
+                <tr>
+                    <td class=" text-light" style=" background-color: #292929;">2</td>
+                    <td class=" text-light" style=" background-color: #292929;">Which language is used for web
+                        development?</td>
+                    <td class=" text-light" style=" background-color: #292929;">Python</td>
+                    <td class=" text-light" style=" background-color: #292929;">HTML</td>
+                    <td class=" text-light" style=" background-color: #292929;">Java</td>
+                    <td class=" text-light" style=" background-color: #292929;">C++</td>
+                    <td class=" text-light" style=" background-color: #292929;">B</td>
+                </tr>
+                <tr>
+                    <td class=" text-light" style=" background-color: #292929;">3</td>
+                    <td class=" text-light" style=" background-color: #292929;">What is 5 + 3?</td>
+                    <td class="text-light" style=" background-color: #292929;">6</td>
+                    <td class="bgol text-light" style=" background-color: #292929;">7</td>
+                    <td class="bgol text-light" style=" background-color: #292929;">8</td>
+                    <td class="bgol text-light" style=" background-color: #292929;">9</td>
+                    <td class="bgol text-light" style=" background-color: #292929;">C</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="separator"></div>
+
+
+
+
+
+
+    <div class="container-fluid main4 bgdark font" id="con">
+        <div class="container col-lg-5 col-md-6 col-sm-6" style="margin-top: 100px; border: 10px solid white; border-radius: 20px">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="post" onsubmit="return validateForm()">
+                <p class="h1 text-center mt-3 text-light">Contact us</p>
+                
+                <input type="hidden" name="access_key" value="f2c5c36d-f663-45ff-a3a1-8adb7d49e675">
+                
+                <div class="input-group mt-4">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Username" required name="username" id="username">
+                </div>
+                <small id="usernameError" class="text-danger"></small>
+        
+                <div class="input-group mt-4">
+                    <input type="text" class="form-control" placeholder="Your Email" required name="email" id="email">
+                    <span class="input-group-text">@example.com</span>
+                </div>
+                <small id="emailError" class="text-danger"></small>
+        
+                <div class="input-group mt-4">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Subject" name="subject">
+                </div>
+        
+                <div class="form-floating mt-4">
+                    <textarea class="form-control" id="comment" required style="height: 150px;" name="comments"
+                        placeholder="Comment goes here"></textarea>
+                    <label for="comment">Comments</label>
+                </div>
+                <small id="commentError" class="text-danger"></small>
+        
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-light mt-4 mb-3">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+
+        <!-- <div class="d-flex justify-content-center align-items-center text-light" style="height: 100px;">
+    <div class="d-flex gap-3">
+        <div style="border: 2px solid white; width: 60px; border-radius: 15px;" class="hov d-flex justify-content-center align-items-center">
+            <img src="insta.png" alt="" width="40">
+        </div>
+        <div style="border: 2px solid white; width: 60px; border-radius: 15px;" class="hov d-flex justify-content-center align-items-center">
+            <img src="insta.png" alt="" width="40">
+        </div>
+        <div style="border: 2px solid white; width: 60px; border-radius: 15px;" class="hov d-flex justify-content-center align-items-center">
+            <img src="insta.png" alt="" width="40">
+        </div>
+    </div>
+</div> -->
+        <h3 class="text-light text-center mt-2 font">Follow us on</h3>
+        <div class="social-container bgdark mt-3">
+            <div class="icon-box mb-4">
+                <!-- Instagram Icon -->
+                <div class="icon">
+                    <a href="https://www.instagram.com/abu_hurairah_rehmani?igsh=MXhnazVoYTBobHFlcw==" target="_blank">
+                        <i class="fa-brands fa-instagram mt-1"></i>
+                    </a>
+                </div>
+        
+                <!-- YouTube Icon -->
+                <div class="icon">
+                    <a href="https://youtube.com/@a-hcoder1718?si=GtINeOdkuNudfz7H" target="_blank">
+                        <i class="fa-brands fa-youtube mt-1"></i>
+                    </a>
+                </div>
+        
+                <!-- Facebook Icon -->
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=61550602416623&mibextid=ZbWKwL" target="_blank">
+                        <i class="fa-brands fa-facebook-f mt-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+            <script src="quiz.js"></script>
+</body>
+
+</html>
